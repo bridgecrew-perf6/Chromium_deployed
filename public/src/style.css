@@ -1,0 +1,980 @@
+/* CSS Reset */
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Graphik Web", Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+/* Header Section */
+header{
+    background-color: #111324;
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0%;
+    z-index: 100;
+    display: grid;
+    justify-content: space-around;
+}
+
+/* Navigation Bar */
+#nav-bar{
+    /* border: 2px solid red; */
+    height: 100%;
+    /* width: 68.5%; */
+    width: 1300px;
+    /* position: relative;
+    left: 15.75%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo inside the Navigation Bar */
+.cmlogo{
+    padding-left: 1%;
+    padding-top: 2%;
+    /* width: 100%; */
+    /* border: 2px solid red; */
+    transition: 0.2s ease-in-out;
+}
+
+/* Navigation Menu */
+#nav-menu{
+    float: right;
+    font-weight: lighter;
+    width: 74.5%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+
+#primary{
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+#secondary{
+
+    float: right;
+    width: 29%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+
+#nav-menu a:not(.btn){
+    /* border: 2px solid red; */
+    letter-spacing: .14em;
+    font-size: 0.88em;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 8% 3%;
+    padding-bottom: 6.8%;
+    box-sizing: border-box;    
+    transition: 0.2s ease-in-out;
+}
+
+#nav-menu #secondary a:not(.btn){
+    padding: 11.8% 2%;
+    padding-right: 2%;
+    padding-bottom: 0%;
+    font-size: 0.95em;
+    letter-spacing: .12em;
+}
+
+header #nav-menu #secondary .btn{
+    height: 15%;
+    float: right;
+    font-size: 0.92em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5% 5.5%;
+    margin: 7% 0%;
+    margin-bottom: 0%;
+    border-radius: 3px;
+    background: #51CFDB;
+    color: #111324;
+    transition: 0.2s;
+}
+
+/* Hover Effects */
+#nav-bar #nav-menu a:not(.btn):hover{
+    color: #51CFDB;
+}
+
+header #nav-menu #secondary .btn:hover{
+    background: #6ad6e0;
+}
+
+/* Media query for header */
+@media only screen and (max-width: 1400px) {
+    header #nav-menu a:not(.btn){
+        font-size: .75em;
+        padding-right: 1%;
+    }
+    
+    header #nav-menu #secondary a:not(.btn){
+        font-size: .75em;
+        padding-right: 1%;
+    }
+    header #nav-menu{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    header #nav-menu #secondary .btn{
+        padding: 4.7% 5%;
+        font-size: 0.8em;
+    }
+    #nav-bar{
+        width: 1200px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    header #nav-bar .cmlogo svg{
+        padding: 0%;
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    header #nav-bar{
+        width: 1100px;
+    }
+}
+
+@media only screen and (max-width: 1111px) {
+    
+    header #nav-bar .cmlogo svg g path:nth-child(1){
+        display: none;
+    }
+    header #nav-bar{
+        width: 1000px;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    
+    header #nav-bar #secondary a:nth-child(2){
+        display: none;
+    }
+    
+    header #nav-bar #secondary{
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    header #nav-bar{
+        width: 900px;
+    }
+
+}
+
+
+
+/* Content Section */
+
+/* Unforgettable Section */
+#unforgettable{
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.inner{
+    padding-top: 1.6%;
+    width: 68.3%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+}
+
+#left-sec{
+    width: 45%;
+}
+
+.inner #left-sec h1{
+    margin-top: 11%;
+    font-size: 56px;
+}
+
+.inner #left-sec p{
+    letter-spacing: .015em;
+    margin-top: -10px;
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: lighter;
+}
+
+.btn-container{
+    
+    width: 95%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-container a{
+    border-radius: 3px;
+    text-decoration: none;
+    width: 48.5%;
+    height: 60px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 23px;
+    box-sizing: border-box;
+    transition-duration: 0.2s;
+}
+
+.btn-container a:nth-child(1){
+    color: white;
+    background-color: #7856FF;
+}
+
+.btn-container a:nth-child(1):hover{
+    color: white;
+    background-color: #886aff;
+}
+
+.btn-container a:nth-child(2){
+    border: 1px solid #7856FF;
+    color: #7856FF;
+}
+
+.btn-container a:nth-child(2):hover{
+    border: 1px solid #7856FF;
+    color: white;
+    background-color: #7856FF;
+}
+
+#right-sec{
+    width: 45%;
+    position: relative;
+}
+
+#right-sec img{
+    width: 90.15%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+#right-sec .top img{
+    top: 1%;
+    left: 5%;
+    z-index: 3;
+}
+#right-sec .middle img{
+    top: 13.8%;
+    left: 5%;
+    z-index: 2;
+}
+#right-sec .bottom img{
+    top: 26.8%;
+    left: 5%;
+    z-index: 1;
+}
+
+
+/* Logo Strip */
+#logo-strip{
+    width: 100%;
+    height: 305px;
+    padding: 71px;
+    background: #f6f6f7;
+    box-sizing: border-box  ;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+#logo-strip .cont{
+    margin: auto;
+    width: 68.5%;
+    /* border: 2px solid red; */
+}
+
+#logo-strip .cont p{
+    font-size: 22px;
+    letter-spacing: .015em;
+    margin: 12px 225px 28px;
+}
+#logo-strip .logos{
+    height: 90px;
+}
+
+#logo-strip .logos img{
+    margin: 0 67.5px;
+    width: 7.28%;
+}
+
+
+/* Beautiful section */
+
+#beautiful{
+    /* border: 2px solid red; */
+    width: 100%;
+    padding-top: 85px;
+    /* padding-bottom: 0px; */
+    height: 884px;
+    border-top: 1px solid rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+#beautiful #content {
+    /* width: 1300px; */
+    width: 68.5%;
+    /* border: 2px solid red; */
+    margin: auto;
+}
+
+#beautiful #content #head-content{
+    /* border: 2px solid red; */
+    margin: 0px auto;
+    margin-bottom: 60px;
+}
+
+#beautiful #content #head-content h3{
+    /* border: 2px solid red; */
+    text-align: center;
+    font-size: 35px;
+    margin: 0px;
+}
+
+#beautiful #content #mid-content{
+    /* border: 2px solid red; */
+    height: 520px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#beautiful #content #mid-content #left-cont{
+    /* border: 2px solid red; */
+    width: 429px;
+    padding: 40px 0px 0px;
+}
+
+#beautiful #content #mid-content #left-cont .box{
+    /* border: 2px solid red; */
+    margin: 25px 0px;
+}
+
+.strong{
+    font-size: 11.5px;
+    font-weight: 1000;
+    /* letter-spacing: -0.7px; */
+}
+
+#beautiful #content #mid-content #left-cont .box p{
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 20px;
+    color: gray;
+    /* margin-top: 13px; */
+}
+
+#beautiful #content #mid-content #left-cont .box p a{
+    text-decoration: none;
+    color: rgba(70, 70, 248, 0.87);
+}
+
+#beautiful #content #mid-content #right-cont{
+    /* border: 2px solid red; */
+    margin-top: 14px;
+    width: 132%;
+    height: 76.2%;
+    background-color: #e0e0e0;
+    box-shadow: 0px 10px 30px 0px #c6c6cc;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.bar{
+    /* border: 2px solid red; */
+    height: 10px;
+    width: 100%;
+    background-color: #f3f1f1;
+    background-image: url(https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/global/browser-bar.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+#beautiful #content #mid-content #right-cont .sidebar{
+    width: 35.7%;
+    height: 97.8%;
+    overflow: hidden;
+}
+
+#beautiful #content #mid-content #right-cont .sidebar img{
+    width: 78.8%;
+    float: left;
+    
+}
+
+#beautiful #content #mid-content #right-cont .gusto{
+    overflow: hidden;
+}
+
+#beautiful #content #mid-content #right-cont .gusto img{
+    width: 70.9%;
+    position: absolute;
+    top: 10px;
+    left: 28.2%;
+    float: right;
+}
+
+#beautiful #content #foot-content{
+    padding-top: 60px;
+}
+
+#beautiful #content #foot-content p{
+    font-size: 18px;
+    color: #111324;
+    padding: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#beautiful #content #foot-content p + .btn-container a{
+    width: 218px;
+    margin: 0% 0% 0% 43.8%;
+}
+
+/* Templates Section */
+#templates{
+    /* border: 2px solid red; */
+    height: 430px;
+    padding: 80px 78px;
+}
+
+#templates #temp{
+    /* border: 2px solid red; */
+    width: 56%;
+    height: 103.8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #e9e9e9;
+    float: left;
+    gap: 0px 18px;
+}
+
+#templates #temp .img-cont{
+    box-shadow: 0px 10px 20px 5px #cacacc;
+    height: 99%;
+}
+
+#templates #temp .bar{
+    
+    width: 106%;
+}
+
+#templates #temp img{
+    width: 101.8%;
+}
+
+#templates .box{
+    position: relative;
+    width: 420px;
+    top: 66px;
+    left: 116px;
+    float: left;
+    /* border: 2px solid red; */
+}
+
+#templates .box h3{
+    line-height: 44px;
+    margin: 14px 0px;
+    font-size: 35px;
+}
+
+#templates .box p{
+    margin: 14px 0px;
+    letter-spacing: .2px;
+    margin-bottom: 17px;
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.box .btn-container a{
+    margin-top: 3px;
+    font-weight: 600;
+    width: 180px;
+    border: 1px solid #7856FF;
+    color: #7856FF;
+    background-color: white;
+}
+
+.box .btn-container a:hover{
+    border: 1px solid #7856FF;
+    color: white;
+    background-color: #7856FF;
+}
+
+/* Pics Section 1 */
+.pics{
+    margin-top: 17px;
+    height: 406px;
+}
+
+.pics .back{
+    height: 50.74%;
+    width: 100%;
+    padding: 100px 0;
+    background: center center no-repeat url(https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/heroes/banner-ripcurl.jpg);
+    background-size: cover;
+    border-bottom: none;
+    color: white;
+}
+
+.pics .back p{
+    margin-top: 1px;
+    margin-bottom: 30px;
+    margin-right: 40%;
+    line-height: 36px;
+    letter-spacing: .4px;
+    font-size: 24px;
+}
+
+.pics .back .strong{
+    margin-top: 34px;
+    margin-bottom: 43px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.trns-btn{
+    border-radius: 3px;
+    padding: 20.5px 37px;
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: white;
+    color: #7856FF;
+    transition: 0.2s ease-in-out;
+}
+
+.trns-btn:hover{
+    border-radius: 3px;
+    padding: 20.5px 37px; 
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: rgb(0,0,0,0);
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.r-shift{
+    margin: 0px 302px;
+}
+
+
+/* Fancy section */
+.fancy{
+    position: fixed;
+    height: 52px;
+    width: 52px;
+    border-radius: 50px;
+    bottom: 2.1%;
+    right: 1.05%;
+    background-color: #7856FF;
+    box-shadow: 0px 0px 10px 0px rgb(0,0,0,.3);
+    transition: 0.2s ease-in-out;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.fancy a{
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    fill: white;
+    text-decoration: none;
+    color: #7856FF;
+}
+
+.fancy a .icon svg{
+    height: 24px;
+    position: relative;
+    top: 14px;
+    left: 4px;
+}
+
+.fancy a span{
+    /* border: 2px solid red; */
+    padding-bottom: 14px;
+    padding-right: 11px;
+    position: relative;
+    top: -10px;
+    left: 52px;
+}
+
+.fancy:hover, .fancy a:hover{
+    width: 150px;
+    color: white;
+}
+
+
+/* Second Last section */
+#sec-last{
+    height: 470px;
+    padding: 80px 100px;
+    padding-bottom: 54px;
+}
+
+#sec-last .stuff{
+    height: 500px;
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+
+#sec-last .left-stuff{
+    width: 40%;
+    height: 100%;
+    /* border: 2px solid red; */
+    float: left;
+    padding: 45px 80px 0px 32px;
+    box-sizing: border-box;
+}
+
+#sec-last .left-stuff h3{
+    font-size: 35px;
+    letter-spacing: .1px;
+    line-height: 45px;
+    font-weight: bold;
+    margin-bottom: 0px
+}
+
+#sec-last .left-stuff p{
+    margin-top: 10px;
+    font-size: 17.5px;
+    letter-spacing: .38px;
+    line-height: 28px;
+    font-weight: lighter;
+}
+
+#sec-last .right-stuff{
+    margin-right: 65px;
+    width: 40%;
+    /* border: 2px solid red; */
+    float:  right;
+}
+
+#sec-last .right-stuff img{
+    width: 106.3%;
+    /* border: 2px solid red; */
+}
+
+.left-stuff .btn-container a{
+    margin-top: 4px;
+    font-weight: 600;
+    width: 219px;
+    padding: 22px;
+    border: 1px solid #7856FF;
+    color: #7856FF;
+    background-color: white;
+}
+
+.left-stuff .btn-container a:hover{
+    border: 1px solid #7856FF;
+    color: white;
+    background-color: #7856FF;
+}
+
+/* Pics 2 section */
+#sec-last + .pics .back{
+    height: 278px;
+    background-size: cover;
+    border-bottom: none;
+    background: center center no-repeat url(https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/home/girlboss-bg.jpg);
+    background-size: 100%;
+}
+
+#sec-last + .pics .back p{
+    margin-right: 36%;
+}
+
+#sec-last + .pics .back .trns-btn{
+    padding-right: 36px;
+}
+
+
+/* Gradient Section */
+#gradient{
+    margin-top: 72px;
+    background: linear-gradient(to right, #7856FF 0%, #65B9FF 100%);
+    height: 586px;
+}
+
+#gradient #container{
+    /* border: 2px solid red; */
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 153px;
+    box-sizing: border-box;
+    color: white;
+}
+
+#gradient #container h3{
+    letter-spacing: 0.25px;
+    line-height: 45px;
+    font-size: 35px;
+    width: 32%;
+    margin: auto;
+}
+
+#gradient #container p{
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    font-size: 17.15px;
+    margin: 37px auto;
+    margin-bottom: 60px;
+    width: 38%;
+}
+
+#gradient #container .trns-btn{
+    padding: 21.5px 40px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/* Footer Section */
+footer{
+    height: 595px;
+    background-color: #111324;
+    color: white;
+    padding: 60px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Top Part of footer with links */
+
+footer .cmlogo{
+    display: inline;
+    padding: .15%;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer #footer-cont{
+    /* width: 73.1%; */
+    width: 1300px;
+}
+
+footer #footer-cont #top-footer{
+    margin-bottom: 219px;
+}
+
+footer #footer-cont #footer-menu{
+    padding: 0%;
+    margin-top: -2px;
+    float: right;
+    width: 682px;
+}
+
+footer #footer-cont #footer-menu ul{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    float: left;
+    width: 25%;
+}
+
+footer #footer-cont #footer-menu ul li:nth-child(1){
+    margin: 0px 0px 9px 0px;
+}
+
+footer #footer-cont #footer-menu ul li{
+    margin: 0px 0px 7px 0px;
+}
+
+footer #footer-cont #footer-menu ul li a{
+    color: white;
+    font-size: 12px;
+    letter-spacing: .5px;
+    transition: 0.2s ease-in-out;
+}
+
+footer #footer-cont #footer-menu ul li a:hover{
+    opacity: 0.85;
+}
+
+footer #footer-cont #footer-menu ul .heading{
+    letter-spacing: 0px;
+    font-weight: bold;
+    color: #8A8B93;
+}
+
+footer #footer-cont #footer-menu ul .heading:hover{
+    opacity: 1;
+}
+
+
+hr{
+    border: 0px solid #ffffff;
+    border-top: 1px solid #5D5D66;
+    width: 99.7%;
+}
+
+/* Bottom Part of footer with copyright */
+
+footer #bottom-footer{
+    margin-top: 26px;
+    margin-left: 2px;
+}
+
+footer #bottom-footer .btn-container{
+    width: 18.12%;
+    float: left;
+}
+
+footer #bottom-footer .btn-container a{
+    width: 100%;
+}
+
+footer #bottom-footer .foot-notes{
+    margin-top: 9.5px;
+    float: right;
+    width: 684px;
+}
+
+footer #bottom-footer .foot-notes a{
+    margin-right: 13.5px;
+}
+
+footer #bottom-footer .foot-notes a svg{
+    transition: 0.2s ease-in-out;
+}
+
+footer #bottom-footer .foot-notes a svg:hover{
+    opacity: .85;
+}
+
+footer #bottom-footer .foot-notes .foot-line{
+    float: right;
+    width: 498px;
+    font-size: 11.5px;
+    margin-top: 3px;
+    margin-right: 0px;
+    color: #BEBEC2;
+    letter-spacing: .05px;
+}
+
+footer #bottom-footer .foot-notes .foot-line a{
+    color: #BEBEC2;
+    margin-right: 0px;
+    transition: 0.2s ease-in-out;
+}
+
+footer #bottom-footer .foot-notes .foot-line a:hover{
+    opacity: .85;
+}
+
+footer #bottom-footer .foot-notes .foot-line .first-sep {
+    width: 1px;
+    height: 13px;
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    background-color: #8A8B93;
+    margin: 0px 5px;
+}
+
+footer #bottom-footer .foot-notes .foot-line .sep {
+    margin-left: 10px;
+}
+
+.last-part{
+    width: 75%;
+    margin: auto;
+    margin-top: 145px;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+.last-part span{
+    color: #BEBEC2;
+    font-size: 11.5px;
+    letter-spacing: .18px;
+}
+
+.last-part span a{
+    color: #BEBEC2;
+    transition: 0.2s ease-in-out;
+}
+
+.last-part span a:hover{
+    opacity: 0.85;
+}
+
+footer .logos{
+    /* border: 2px solid red; */
+    width: 74.5%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+footer .logos a{
+    margin: 16px;
+}
+
+footer .logos a img{
+    width: 10%;
+}
+
+footer .logos .one{
+    width: 15.2%;
+}
+
+footer .logos .two{
+    width: 14%;
+}
+
+footer .logos .three{
+    width: 5.8%;
+}
+
+footer .logos .four{
+    width: 7.8%;
+}
+
+footer .logos .five{
+    width: 8%;
+}
+
+footer .logos .six{
+    width: 8%;
+}
+
+footer .logos .seven{
+    width: 6%;
+}
+
+footer .logos .eight{
+    width: 5%;
+}
+
+/* media Queries */
+
+@media only screen and (max-width: 1630px){
+    footer #bottom-footer .btn-container a{
+        font-size: 12px;
+    }
+    footer{
+        justify-content: space-evenly;
+    }
+}

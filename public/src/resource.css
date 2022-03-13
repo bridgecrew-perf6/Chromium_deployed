@@ -1,0 +1,1172 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Graphik Web", Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+  
+/* Header Section */
+header{
+  background-color: #111324;
+  width: 100%;
+  height: 80px;
+  position: sticky;
+  top: 0%;
+  z-index: 100;
+  display: grid;
+  justify-content: space-around;
+}
+
+/* Navigation Bar */
+#nav-bar{
+  /* border: 2px solid red; */
+  height: 100%;
+  /* width: 68.5%; */
+  width: 1300px;
+  /* position: relative;
+  left: 15.75%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo inside the Navigation Bar */
+.cmlogo{
+  padding-left: 1%;
+  padding-top: 2%;
+  /* width: 100%; */
+  /* border: 2px solid red; */
+  transition: 0.2s ease-in-out;
+}
+
+/* Navigation Menu */
+#nav-menu{
+  float: right;
+  font-weight: lighter;
+  width: 74.5%;
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+#primary{
+  /* border: 2px solid red; */
+  display: flex;
+}
+
+#secondary{
+
+  float: right;
+  width: 29%;
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+#nav-menu a:not(.btn){
+  /* border: 2px solid red; */
+  letter-spacing: .14em;
+  font-size: 0.88em;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 8% 3%;
+  padding-bottom: 6.8%;
+  box-sizing: border-box;    
+  transition: 0.2s ease-in-out;
+}
+
+#nav-menu #secondary a:not(.btn){
+  padding: 11.8% 2%;
+  padding-right: 2%;
+  padding-bottom: 0%;
+  font-size: 0.95em;
+  letter-spacing: .12em;
+}
+
+header #nav-menu #secondary .btn{
+  height: 15%;
+  float: right;
+  font-size: 0.92em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5% 5.5%;
+  margin: 7% 0%;
+  margin-bottom: 0%;
+  border-radius: 3px;
+  background: #51CFDB;
+  color: #111324;
+  transition: 0.2s;
+}
+
+/* Hover Effects */
+#nav-bar #nav-menu a:not(.btn):hover{
+  color: #51CFDB;
+}
+
+header #nav-menu #secondary .btn:hover{
+  background: #6ad6e0;
+}
+
+/* Media query for header */
+@media only screen and (max-width: 1400px) {
+  header #nav-menu a:not(.btn){
+      font-size: .75em;
+      padding-right: 1%;
+  }
+  
+  header #nav-menu #secondary a:not(.btn){
+      font-size: .75em;
+      padding-right: 1%;
+  }
+  header #nav-menu{
+      width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  header #nav-menu #secondary .btn{
+      padding: 4.7% 5%;
+      font-size: 0.8em;
+  }
+  #nav-bar{
+      width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  header #nav-bar .cmlogo svg{
+      padding: 0%;
+      width: 75%;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  header #nav-bar{
+      width: 1100px;
+  }
+}
+
+@media only screen and (max-width: 1111px) {
+  
+  header #nav-bar .cmlogo svg g path:nth-child(1){
+      display: none;
+  }
+  header #nav-bar{
+      width: 1000px;
+      justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  
+  header #nav-bar #secondary a:nth-child(2){
+      display: none;
+  }
+  
+  header #nav-bar #secondary{
+      justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  header #nav-bar{
+      width: 900px;
+  }
+
+}
+
+/* Fancy section */
+.fancy{
+  position: fixed;
+  height: 52px;
+  width: 52px;
+  border-radius: 50px;
+  bottom: 2.1%;
+  right: 1.05%;
+  background-color: #7856FF;
+  box-shadow: 0px 0px 10px 0px rgb(0,0,0,.3);
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.fancy a{
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  fill: white;
+  text-decoration: none;
+  color: #7856FF;
+}
+
+.fancy a .icon svg{
+  height: 24px;
+  position: relative;
+  top: 14px;
+  left: 4px;
+}
+
+.fancy a span{
+  /* border: 2px solid red; */
+  padding-bottom: 14px;
+  padding-right: 11px;
+  position: relative;
+  top: -10px;
+  left: 52px;
+}
+
+.fancy:hover, .fancy a:hover{
+  width: 150px;
+  color: white;
+}
+
+
+
+#head {
+        width: 100%;
+        height: 352px;
+        background-color: #111324;
+        background: linear-gradient(to right, #111324 0%, #212547 100%);
+    }
+    #headbottom {
+        width: 100%;
+        height: 70px;
+        background-color: #7856FF;
+        margin-top: 0;
+        display: flex;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 80px;
+        z-index: 100;
+    }
+
+    #headbottom .random{
+      margin: auto;
+      display: flex;
+    }
+
+    #sub {
+        width: 125px;
+        height: 40px;
+        border-radius: 3px;
+        background-color: #F6F6F7;
+        margin-top: 0.5%;
+        /* margin-left: 2%; */
+        font-weight: bold;
+        font-size: 15px;
+        border: 0px;
+        transition: 0.2s ease-in-out;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+    #sub > a {
+      text-decoration: none;
+      color: black;
+    }
+    #sub:hover > a {
+        color: #7856FF;
+        cursor: pointer;
+    }
+    #head > .text > h {
+        font-size: 55px;
+        color: #FFFFFF;
+        margin: 0% auto;
+        font-family: "Graphik Web", Helvetica, sans-serif;
+        font-weight: 570;
+    }
+    #head > .text > p {
+        font-size: 18px;
+        color: #FFFF;
+        text-align: center;
+        margin-left: 25px;
+      }
+      #head > .text {
+        text-align: center;
+        width: 100%;
+        height: 124px;
+        padding-top: 6.5%;
+    }
+    #headbottom  p {
+        margin: auto;
+        font-size: 16px;
+        color: #FFFFFF;
+        /* margin-left: 30%; */
+        
+    }
+    .logo1{
+        height: 40px;
+        width: 40px;
+        background-color: #7856FF;
+        border-radius: 5px;
+    }
+    .logo1 > img {
+        height: 35px;
+        width: 35px;
+    }
+    .filter1 {
+        width: 80%;
+        height: 88px;
+        display: flex;
+        margin-top: 100px;
+        margin-left: 10%;
+    }
+    .filter1 > input {
+        width: 25%;
+        height: 45px;
+        margin-left: 5%;
+        border-radius: 3px;
+        text-align: center;
+        font-size: 16px;
+        font-style: italic;
+        border: 1px solid rgb(0,0,0,0.4);
+    }
+    .filter1 > p {
+        margin: 20px;
+        color: darkgrey;
+        padding: 0%;
+        margin-top: 1%;
+    }
+    .filter1 > p1 {
+        margin-left: 30%;
+        color: darkgrey;
+        padding: 0%;
+        margin-top: 1%;
+    }
+    .filter1 > p1:hover {
+        color: #7856FF;
+        cursor: pointer;
+    }
+    .filter1 > p:hover {
+        color: #7856FF;
+        cursor: pointer;
+    }
+    #mid {
+        width: 80%;
+        height: 1000px;
+        margin-left: 10%;
+    }
+    .flex {
+        width: 100%;
+        height: 50%;
+    }
+    #mid > .flex > div{
+        width: 35%;
+        height: 90%;
+        margin-top: 1%;
+        margin-left: 1.5%;
+    }
+    .box1 > img {
+        width: 100%;
+        height: 50%;
+    }
+    .box1 {
+        background-color: #FFFFFF;
+        border: 1px solid rgb(0,0,0,0.2);
+
+    }
+    .box1 > .svg {
+      height: 40px;
+      width: 60px;
+      border-radius: 50%;
+      border: 1px solid rgb(0,0,0,0.8);
+      background-color: white;
+      justify-content: center;
+      padding-top: 1%;
+      margin-top: -2%;
+      position: absolute;
+      margin-left: 10.5%;
+    }
+    .svg > img {
+      width: 70%;
+      height: 70%;
+      margin-top: 0px;
+      margin-left: 8px;
+
+    }
+    .box1 > .notes > p {
+        font-family: "Graphik Web", Helvetica, sans-serif;
+        font-size: 25px;
+        color: #696969 ;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-weight: 530;
+    }
+    .notes {
+        width: 100%;
+        height: 50%;
+        display: block;
+        position: relative;
+    }
+    .overlay {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        background: #FFFFFF;
+        color: darkgrey;
+        font-family: "Graphik Web", Helvetica, sans-serif;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transition: top ease 0.3s;
+        font-size: 25px;
+        text-align: center;
+    }
+    .overlay:hover {
+        opacity: 10;
+        transition: all 0.4s;
+        top: -28px;
+    }
+    .box2 {
+        background-color: #7856FF;
+        border: 1px solid rgb(0,0,0,0.2);
+        padding-right: 1.5%;
+    }
+    .box2 >  p {
+        font-family: "Graphik Web", Helvetica, sans-serif;
+        font-size: 2em;
+        color: #FFFFFF;
+        margin-left: 4%;
+    }
+    .box3 {
+        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2020/01/wall-street-journal-img-copy-570x675.jpg);
+        
+        background-size: cover;
+        border: 1px solid rgb(0,0,0,0.2);
+    }
+    #baner {
+        width: 60%;
+        height: 62px;
+        margin-top: 20px;
+        margin-left: -15px;
+        background-color: #7856FF;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 15px;
+        font-size: 30px;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 20%;
+        box-shadow: 4px 4px rgb(0,0,0,0.6);
+    }
+    #baner1 {
+        width: 50%;
+        height: 62px;
+        margin-top: 20px;
+        margin-left: -15px;
+        background-color: #7856FF;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 15px;
+        font-size: 30px;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 20%;
+        box-shadow: 4px 4px rgb(0,0,0,0.6);
+    }
+    #baner2 {
+        width: 80%;
+        height: 62px;
+        margin-top: 20px;
+        margin-left: -15px;
+        background-color: #FFFFFF;
+        color: #7856FF;
+        text-align: center;
+        padding-top: 15px;
+        font-size: 30px;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 20%;
+        box-shadow: 4px 4px rgb(0,0,0,0.6);
+    }
+    #baner3 {
+        width: 60%;
+        height: 62px;
+        margin-top: 20px;
+        margin-left: -15px;
+        background-color: #7856FF;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 15px;
+        font-size: 30px;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 20%;
+        box-shadow: 4px 4px rgb(0,0,0,0.6);
+    }
+    #baner4 {
+        width: 60%;
+        height: 62px;
+        margin-top: 20px;
+        margin-left: -15px;
+        background-color: black;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 15px;
+        font-size: 30px;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 20%;
+        box-shadow: 4px 4px rgb(0,0,0,0.6);
+    }
+    .box3 > p {
+        font-family: "Graphik Web", Helvetica, sans-serif;
+        font-size: 25px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .box4 > div {
+        font-family: "Graphik Web", Helvetica, sans-serif;
+        font-size: 20px;
+        color: #FFFFFF;
+        text-align: center;
+        font-weight: normal;
+        width: 80%;
+        height: 80%;
+        margin: auto;
+    }
+    .box2 > div {
+        font-family: "Graphik Web", Helvetica, sans-serif;
+        font-size: 20px;
+        color: #FFFFFF;
+        font-weight: normal;
+        width: 80%;
+        height: 80%;
+        margin: auto;
+    }
+    .box4 {
+        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/10/dark-with-bubbles-570x675.jpg);
+        background-size: cover;
+        border: 1px solid rgb(0,0,0,0.2);
+    }
+    .box4 > p {
+        font-family: "Graphik Web", Helvetica, sans-serif;
+        font-size: 25px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    #mid1 {
+        width: 80%;
+        height: 1000px;
+        margin-left: 9%;
+        background-color: white;
+    }
+    #mid1 > .flex > div{
+        width: 35%;
+        height: 90%;
+        border: 1px solid darkgrey;
+        margin-top: 1%;
+        margin-left: 1.5%;
+    }
+    .box5 {
+        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2021/03/drag-image_web-570x675.jpg);
+        background-size: cover;
+        border: 1px solid rgb(0,0,0,0.2);
+    }
+    .box5 > p {
+        font-family: "Graphik Web", Helvetica, sans-serif;
+        font-size: 25px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .box6 {
+        background-color: #1E2241;
+        border: 1px solid rgb(0,0,0,0.2);
+    }
+    .box6 > p {
+        font-family: "Graphik Web", Helvetica, sans-serif;
+        font-size: 25px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .box7 {
+        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2019/11/onboarding-video-purple-570x675.jpg);
+        background-size: cover;
+        border: 1px solid rgb(0,0,0,0.2);
+    }
+    .box7 > p {
+        font-family: 'Graphik Web', Helvetica, sans-serif;
+        font-size: 25px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .flex {
+        display: flex;
+    }
+    #template {
+        width: 79%;
+        height: 454px;
+        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2016/09/template-blog_2000x375-v3-tiny.png);
+        background-size: cover;
+        margin-left: 10%;
+    }
+    #template > p {
+        font-family: 'Graphik Web', Helvetica, sans-serif;
+        font-size: 35px;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 5%;
+        padding-left: 5%;
+    }
+    .flex > img {
+        width: 65%;
+        height: 100%;
+    }
+    .flex > .text2 {
+        width: 35%;
+        height: 100%;
+        background-color: #FFFFFF;
+        text-align: center;
+        font-size: 25px;
+        color: #696969;
+    }
+    #mid2 {
+        width: 80%;
+        height: 1000px;
+        margin-left: 9%;
+        background-color: white;
+    }
+    #mid2 > .flex > div{
+        width: 35%;
+        height: 90%;
+        border: 1px solid darkgrey;
+        margin-top: 1%;
+        margin-left: 1.5%;
+    }
+    #mid3 {
+        text-align: center;
+        margin-top: 5%;
+    }
+    #mid3 > h {
+        font-size: 25px;
+        font-family: 'Graphik Web', Helvetica, sans-serif;
+
+    }
+    #get {
+        width: 25%;
+        height: 43px;
+        border-radius: 3px;
+        background-color: #7856FF;
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        margin-top: 1.8%;
+        margin-bottom: 7%;
+        border: 0px;
+        transition: 0.2s ease-in-out;
+    }
+    #get > a {
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+    #get:hover {
+        background-color: #886aff;
+        cursor: pointer;
+    }
+    #mid3 > h1 {
+        font-size: 40px;
+        font-family: 'Graphik Web', Helvetica, sans-serif;
+    }
+    #see {
+        width: 188px;
+        height: 46px;
+        border-radius: 3px;
+        border: 1px solid aqua;
+        color: aqua;
+        margin-top: 2%;
+        background-color: transparent;
+        font-weight: bold;
+        transition: 0.2s ease-in-out;
+    }
+    #see:hover {
+        background-color: aqua;
+        color: black;
+        cursor: pointer;
+    }
+    #mid5{
+        width: 80%;
+        height: auto;
+        display: flex;
+        margin-left: 9%;
+        margin-top: 2%;
+    }
+    #mid5 > .imgbox > img {
+        width: 100%;
+        height: 219px;
+    }
+    #mid5 > .imgbox > div {
+        width: 100%;
+        height: 374px;
+        background-color: white;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .imgbox{
+        background-color: white;
+        width: 32%;
+        height: 600px;
+        margin: 1.5%;
+        border: 1px solid rgb(0,0,0,0.2);
+    }
+    .imgbox hr {
+      border: 0px solid rgb(0,0,0,0.2);
+      border-top: 1px solid #96969a61;
+      width: 85%;
+    }
+    #mid5 > .imgbox > div > p {
+        margin-left: 10px;
+        font-size: 16px;
+        color: #7856FF;
+        font-weight: lighter;
+    }
+    #mid5 > .imgbox > div > h {
+        margin-left: 10px;
+        font-size: 16px;
+        color: #7856FF;
+        font-family: 'Graphik Web', Helvetica, sans-serif;
+        font-weight: 600;
+    }
+    #mid4 > h {
+        font-family: 'Graphik Web', Helvetica, sans-serif;
+        font-size: 40px;
+        font-weight: 570;
+    }
+    #mid4 > p {
+        font-family: 'Graphik Web', Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 200;
+        color: rgb(0,0,0,0.8);
+        margin-left: 20px;
+    }
+    #mid4 {
+        width: 40%;
+        height: auto;
+        margin-left: 37%;
+        margin-top: 15%;
+    }
+    .box8 {
+        background-image: url(https://www.campaignmonitor.com/wp-content/uploads/2017/05/template-builder-teal-tall-570x675.jpg);
+        background-size: cover;
+        border: 1px solid rgb(0,0,0,0.2);
+    }
+    .box8 > p {
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .box9 {
+        border: 1px solid white;
+    }
+    #mid6 {
+        width: 80%;
+        height: 1600px;
+        margin-left: 9%;
+        background-color: #F6F6F7;
+    }
+    #mid6 > .flex1 > div{
+        width: 35%;
+        height: 90%;
+        margin-top: 1%;
+        margin-left: 1.5%;
+    }
+    .flex1 {
+        width: 100%;
+        height: 33%;
+    }
+    .flex1 {
+        display: flex;
+    }
+    #last {
+        width: 80%;
+        height: auto;
+        display: flex;
+        margin-left: 15%;
+        margin-top: 10%;
+    }
+    #last > .img {
+        height: 340px;
+        width: 335px;
+    }
+    .img > img {
+        height: 100%;
+        width: 100%;
+    }
+    .pbox {
+        height: 340px;
+        width: 50%;
+        margin-left: 10%;
+    }
+    .pbox > h {
+        font-family: 'Graphik Web', Helvetica, sans-serif;
+        font-size: 35px;
+        font-weight: 550;
+    }
+    .pbox > p {
+        font-family: 'Graphik Web', Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 100;
+        color: rgb(0,0,0,0.8);
+    }
+    .pbox > .sublast {
+        width: 125px;
+        height: 44px;
+        border-radius: 3px;
+        text-align: center;
+        background: #51CFDB;
+        color: black;
+        margin-top: 1.5%;
+        margin-left: 1.5%;
+        border: 0px;
+    }
+    .sublast > a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .sublast:hover {
+        background-color: #6ad6e0;
+        cursor: pointer;
+    }
+    #end {
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+        background: linear-gradient(to right, #7856FF 0%, #65B9FF 100%);
+        height: 586px;
+        display: grid;
+        justify-content: space-around;
+
+    }
+    #end > div {
+        width: 65%;
+        height: 40%;
+        margin: auto;
+        padding-top: 150px;
+    }
+    #end > div > h {
+        font-family: 'Graphik Web', Helvetica, sans-serif;
+        font-size: 2.4em;
+        line-height: 1.167em;
+        font-weight: bold;
+        color: white;
+        /* padding: 0px 100px; */
+    }
+    #end > div > p {
+        font-family: 'Graphik Web', Helvetica, sans-serif;
+        font-size: 1.15em;
+        font-weight: 400;
+        color: white;
+        margin: 40px 0px;
+    }
+    #end >div > #try {
+        width: 171px;
+        height: 60px;
+        text-align: center;
+        color: #7756FE;
+        border: 0px;
+        border-radius: 3px;
+        background-color: white;
+        transition: 0.2s ease-in-out;
+    }
+    #try > a {
+      text-decoration: none;
+      color: #7756FE;
+      font-weight: bolder;
+      font-size: 1.2em;
+    }
+    #end > div > #try:hover {
+        background-color: transparent;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+        border: 1px solid white;
+    }
+    #try:hover > a {
+      color: #FFFFFF;
+      font-weight: bold;
+    }
+    .box1:hover{
+        cursor: pointer;
+    }
+    .box2:hover{
+        cursor: pointer;
+    }
+    .box3:hover{
+        cursor: pointer;
+    }
+    .box4:hover{
+        cursor: pointer;
+    }
+    .box5:hover{
+        cursor: pointer;
+    }
+    .box6:hover{
+        cursor: pointer;
+    }
+    .box7:hover{
+        cursor: pointer;
+    }
+    .imgbox:hover{
+        cursor: pointer;
+    }
+
+/* Footer Section */
+footer{
+  height: 595px;
+  background-color: #111324;
+  color: white;
+  padding: 60px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-container{
+    
+  width: 95%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-container a{
+  border-radius: 3px;
+  text-decoration: none;
+  width: 48.5%;
+  height: 60px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  padding: 23px;
+  box-sizing: border-box;
+  transition-duration: 0.2s;
+  color: white;
+  background-color: #7856FF;
+}
+
+.btn-container a:hover{
+  color: white;
+  background-color: #886aff;
+}
+
+/* Top Part of footer with links */
+
+footer .cmlogo{
+  display: inline;
+  padding: .15%;
+}
+
+footer a{
+  text-decoration: none;
+}
+
+footer #footer-cont{
+  /* width: 73.1%; */
+  width: 1300px;
+}
+
+footer #footer-cont #top-footer{
+  margin-bottom: 219px;
+}
+
+footer #footer-cont #footer-menu{
+  padding: 0%;
+  margin-top: -2px;
+  float: right;
+  width: 682px;
+}
+
+footer #footer-cont #footer-menu ul{
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  float: left;
+  width: 25%;
+}
+
+footer #footer-cont #footer-menu ul li:nth-child(1){
+  margin: 0px 0px 9px 0px;
+}
+
+footer #footer-cont #footer-menu ul li{
+  margin: 0px 0px 7px 0px;
+}
+
+footer #footer-cont #footer-menu ul li a{
+  color: white;
+  font-size: 12px;
+  letter-spacing: .5px;
+  transition: 0.2s ease-in-out;
+}
+
+footer #footer-cont #footer-menu ul li a:hover{
+  opacity: 0.85;
+}
+
+footer #footer-cont #footer-menu ul .heading{
+  letter-spacing: 0px;
+  font-weight: bold;
+  color: #8A8B93;
+}
+
+footer #footer-cont #footer-menu ul .heading:hover{
+  opacity: 1;
+}
+
+
+hr{
+  border: 0px solid #ffffff;
+  border-top: 1px solid #5D5D66;
+  width: 99.7%;
+}
+
+/* Bottom Part of footer with copyright */
+
+footer #bottom-footer{
+  margin-top: 26px;
+  margin-left: 2px;
+}
+
+footer #bottom-footer .btn-container{
+  width: 18.12%;
+  float: left;
+}
+
+footer #bottom-footer .btn-container a{
+  width: 100%;
+}
+
+footer #bottom-footer .foot-notes{
+  margin-top: 9.5px;
+  float: right;
+  width: 684px;
+}
+
+footer #bottom-footer .foot-notes a{
+  margin-right: 13.5px;
+}
+
+footer #bottom-footer .foot-notes a svg{
+  transition: 0.2s ease-in-out;
+}
+
+footer #bottom-footer .foot-notes a svg:hover{
+  opacity: .85;
+}
+
+footer #bottom-footer .foot-notes .foot-line{
+  float: right;
+  width: 498px;
+  font-size: 11.5px;
+  margin-top: 3px;
+  margin-right: 0px;
+  color: #BEBEC2;
+  letter-spacing: .05px;
+}
+
+footer #bottom-footer .foot-notes .foot-line a{
+  color: #BEBEC2;
+  margin-right: 0px;
+  transition: 0.2s ease-in-out;
+}
+
+footer #bottom-footer .foot-notes .foot-line a:hover{
+  opacity: .85;
+}
+
+footer #bottom-footer .foot-notes .foot-line .first-sep {
+  width: 1px;
+  height: 13px;
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  background-color: #8A8B93;
+  margin: 0px 5px;
+}
+
+footer #bottom-footer .foot-notes .foot-line .sep {
+  margin-left: 10px;
+}
+
+.last-part{
+  width: 75%;
+  margin: auto;
+  margin-top: 145px;
+  text-align: center;
+  /* border: 2px solid red; */
+}
+
+.last-part span{
+  color: #BEBEC2;
+  font-size: 11.5px;
+  letter-spacing: .18px;
+}
+
+.last-part span a{
+  color: #BEBEC2;
+  transition: 0.2s ease-in-out;
+}
+
+.last-part span a:hover{
+  opacity: 0.85;
+}
+
+footer .logos{
+  /* border: 2px solid red; */
+  width: 74.5%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+footer .logos a{
+  margin: 16px;
+}
+
+footer .logos a img{
+  width: 10%;
+}
+
+footer .logos .one{
+  width: 15.2%;
+}
+
+footer .logos .two{
+  width: 14%;
+}
+
+footer .logos .three{
+  width: 5.8%;
+}
+
+footer .logos .four{
+  width: 7.8%;
+}
+
+footer .logos .five{
+  width: 8%;
+}
+
+footer .logos .six{
+  width: 8%;
+}
+
+footer .logos .seven{
+  width: 6%;
+}
+
+footer .logos .eight{
+  width: 5%;
+}
+
+/* media Queries */
+
+@media only screen and (max-width: 1630px){
+  footer #bottom-footer .btn-container a{
+      font-size: 12px;
+  }
+  footer{
+      justify-content: space-evenly;
+  }
+}
